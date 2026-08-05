@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZoiStudio — Where Medicine Meets Spatial Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== Navigation ======== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">ZoiStudio</a>
+    <ul class="nav-links">
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#what-we-do">What We Do</a></li>
+      <li><a href="#approach">Our Approach</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#vision" class="mobile-link">Vision</a>
+    <a href="#what-we-do" class="mobile-link">What We Do</a>
+    <a href="#approach" class="mobile-link">Our Approach</a>
+    <a href="#roadmap" class="mobile-link">Roadmap</a>
+    <a href="#contact" class="mobile-link">Get In Touch</a>
+  </div>
+
+  <!-- ======== Hero Section ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas-wrap">
+      <canvas id="heroCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <h1 class="reveal">Where medicine meets spatial intelligence</h1>
+      <p class="hero-tagline reveal">
+        We build tools that help healthcare professionals see deeper, plan smarter,
+        and deliver better care &mdash; powered by the intersection of medical expertise
+        and spatial computing.
+      </p>
+      <a href="#vision" class="hero-btn reveal">Explore</a>
+    </div>
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 13l5 5 5-5"/>
+        <path d="M7 7l5 5 5-5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======== Vision Section ======== -->
+  <section class="section" id="vision">
+    <div class="reveal">
+      <p class="section-label">Our Vision</p>
+    </div>
+    <h2 class="reveal">Healthcare is becoming spatial</h2>
+    <div class="section-intro vision-text">
+      <p class="reveal">
+        Medicine has always been visual &mdash; but most of it still exists in flat,
+        two-dimensional formats. MR images are scanned in slices. Surgical training
+        relies on textbooks or watching from the back of an operating room. Post-op
+        complications often go unnoticed until it's too late.
+      </p>
+      <p class="reveal">
+        We believe there's a better way. By bringing spatial computing, 3D
+        reconstruction, and intelligent automation into healthcare workflows, we can
+        help doctors make better decisions before they ever pick up a scalpel &mdash; and
+        help patients recover more safely after the procedure is over.
+      </p>
+      <div class="vision-stat reveal">
+        <p>
+          The intersection of XR and healthcare is growing at 34% CAGR, yet most
+          tools in this space are still generic, hand-crafted content &mdash; not
+          personalized, case-specific understanding of the patient's own body.
+          That's what we're solving.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======== What We Do ======== -->
+  <section class="section section--wide" id="what-we-do">
+    <div class="reveal">
+      <p class="section-label">What We Do</p>
+    </div>
+    <h2 class="reveal">Tools for better healthcare</h2>
+    <div class="section-intro">
+      <p class="reveal">
+        We're building a suite of tools that span the entire care continuum &mdash; from
+        pre-operative planning to post-operative recovery. Each product shares a core
+        capability: turning medical data into actionable, spatial understanding.
+      </p>
+    </div>
+    <div class="cards-grid cards-3 stagger-children">
+
+      <!-- Card 1 -->
+      <div class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+            <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/>
+          </svg>
+        </div>
+        <h3>Surgical Training &amp; Simulation</h3>
+        <p>
+          Immersive training tools that prepare surgical professionals for any case &mdash;
+          from basic spatial visualization to complex, patient-specific scenarios built
+          directly from real surgical data.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 17l6-6 4 4 8-8"/>
+            <path d="M17 5h4v4"/>
+          </svg>
+        </div>
+        <h3>Post-Op Care &amp; Prediction</h3>
+        <p>
+          Tools that predict and flag post-operative complications before they escalate &mdash;
+          from delirium risk to surgical site issues &mdash; so care teams can intervene
+          proactively, not reactively.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3 3"/>
+            <path d="M20 8l-4-1"/>
+          </svg>
+        </div>
+        <h3>Patient Education</h3>
+        <p>
+          Making complex medical information accessible through 3D visualization.
+          Patients understand their conditions and procedures better when they can
+          see them &mdash; not just hear about them.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======== Our Approach (Differentiator) ======== -->
+  <section class="section section--wide" id="approach">
+    <div class="reveal">
+      <p class="section-label">Our Approach</p>
+    </div>
+    <h2 class="reveal">What makes us different</h2>
+    <div class="section-intro">
+      <p class="reveal">
+        Most medical training and visualization tools are built the same way &mdash;
+        hand-crafted, generic, and expensive. We're taking a different approach
+        that changes both the cost structure and what's possible.
+      </p>
+    </div>
+    <div class="approach-grid stagger-children">
+
+      <div class="approach-item reveal">
+        <h3>Built from real data</h3>
+        <p>
+          Our simulations are generated from actual surgical video and imaging &mdash;
+          not hand-modeled generic libraries. That means every training scenario
+          is case-specific, clinically accurate, and a fraction of the cost to produce.
+        </p>
+      </div>
+
+      <div class="approach-item reveal">
+        <h3>Scale expert knowledge</h3>
+        <p>
+          The skill and judgment of top surgeons shouldn't be limited to one
+          operating room at a time. We're building tools that make expert-level
+          medical capability accessible far beyond the hospital walls.
+        </p>
+      </div>
+
+      <div class="approach-item reveal">
+        <h3>Human-in-the-loop quality</h3>
+        <p>
+          AI handles the repetitive, mundane work &mdash; image processing, pattern
+          recognition, preliminary analysis. Human experts focus on what matters:
+          making the right call for each patient.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======== Roadmap ======== -->
+  <section class="section" id="roadmap">
+    <div class="reveal">
+      <p class="section-label">Our Roadmap</p>
+    </div>
+    <h2 class="reveal">Where we're headed</h2>
+    <div class="section-intro">
+      <p class="reveal">
+        Our product vision is ambitious, but we're sequencing carefully &mdash;
+        starting with what has the biggest near-term impact and building toward
+        longer-term research goals.
+      </p>
+    </div>
+    <div class="timeline stagger-children">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-phase">Now</p>
+          <h3>Surgical training pipeline</h3>
+          <p>Automated video-to-simulation generation, post-operative care prediction tools, and patient education platforms.</p>
+        </div>
+      </div>
+
+      <hr class="timeline-divider">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-phase">Coming Soon</p>
+          <h3>Research &amp; Clinical Applications</h3>
+          <p>Alzheimer's early-detection research, diabetes imaging analysis, and physical rehabilitation tools powered by spatial computing.</p>
+        </div>
+      </div>
+
+      <hr class="timeline-divider">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot-wrap"><div class="timeline-dot empty"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-phase">Vision</p>
+          <h3>Broader Clinical Impact</h3>
+          <p>Mental wellness tools, deeper clinical integrations, and expanded access to expert-level medical care for underserved communities.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======== Contact Section ======== -->
+  <section class="section contact" id="contact">
+    <div class="reveal">
+      <p class="section-label">Get In Touch</p>
+    </div>
+    <h2 class="reveal">Let's talk</h2>
+    <div class="section-intro">
+      <p class="reveal">
+        Whether you're a clinician, researcher, or fellow builder &mdash; we'd love to
+        connect. We're always open to conversations about healthcare, spatial
+        computing, or anything in between.
+      </p>
+    </div>
+    <a href="mailto:hello@zoistudio.tech" class="contact-email reveal">
+      hello@zoistudio.tech
+    </a>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="footer">
+    <p>&copy; 2026 ZoiStudio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
