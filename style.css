@@ -407,6 +407,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.4rem;
+  box-shadow: 0 0 9px 4px rgba(122, 158, 118, 0.12);
 }
 
 .card-icon svg {
@@ -438,17 +439,18 @@ p {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--green-pale), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(135deg, var(--glass-bg), var(--green-pale));
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.4rem;
+  box-shadow: 0 0 9px 4px rgba(122, 158, 118, 0.2);
 }
 
 .approach-icon svg {
   width: 22px;
   height: 22px;
-  stroke: var(--green-dark);
+  stroke: var(--green-muted);
 }
 
 .card--approach {
