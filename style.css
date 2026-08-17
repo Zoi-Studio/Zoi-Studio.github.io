@@ -24,6 +24,9 @@
   --shadow-soft: 0 8px 32px rgba(45, 91, 61, 0.08);
   --shadow-hover: 0 12px 40px rgba(45, 91, 61, 0.14);
   --transition-smooth: 0.35s cubic-bezier(0.25, 0.46, 0.4, 0.92);
+--bg-cream: #FDF9F3;
+--bg-green: #DCE8DA;
+--green-pale-deep: #C8D8C4;
 }
 
 html {
@@ -57,7 +60,6 @@ p {
   font-size: clamp(0.95rem, 1.2vw, 1.1rem);
   color: var(--green-dark);
   opacity: 0.88;
-  max-width: 34em;
 }
 
 /* --- Scroll Animations --- */
@@ -221,6 +223,7 @@ p {
   opacity: 0.82;
   line-height: 1.65;
   font-weight: 400;
+  text-align: center;
 }
 
 .hero-btn {
@@ -267,15 +270,20 @@ p {
 *============================================ */
 .section {
   padding: 6rem 2rem;
-  max-width: 750px;
+  max-width: 100%;
   text-align: center;
-  margin: 0 auto;
 }
 
-/* Wide sections that hold card grids — span full viewport width for centered rows */
+/* Sections with wider content (cards, grids) already take full width by default. */
 .section--wide {
-  max-width: 100%;
-  overflow-x: auto;
+  /* no-op — left for backwards compatibility */
+}
+
+.section p {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .section h2 {
@@ -304,6 +312,22 @@ p {
   color: var(--green-muted);
   opacity: 0.9;
   margin-bottom: 0.8rem;
+  text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);
+}
+
+/* ============================================
+   Background Utilities (alternating section colors)
+*============================================ */
+.bg--cream {
+    background: var(--bg-cream);
+}
+
+.bg--green {
+    background: var(--bg-green);
+}
+
+.bg--green .timeline-phase {
+    color: #FDF9F3;
 }
 
 /* ============================================
@@ -348,14 +372,12 @@ p {
 /* ============================================
    Cards (glassmorphism shared)
 *============================================ */
-.cards-grid {
+.cards-3 {
   display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.cards-3 {
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-}
 
 .card {
   background: var(--glass-bg);
@@ -411,17 +433,33 @@ p {
   grid-template-columns: repeat(3, minmax(280px, 1fr));
 }
 
-.approach-item {
-  padding: 2rem;
-  border-left: 2px solid var(--green-pale);
+/* Approach cards — glassmorphism on green backgrounds */
+.approach-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--green-pale), rgba(255, 255, 255, 0.6));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
 }
 
-.approach-item h3 {
-  margin-bottom: 0.5rem;
-  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+.approach-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--green-dark);
 }
 
-.approach-item p {
+.card--approach {
+  text-align: center;
+}
+
+.card--approach h3 {
+  margin-bottom: 0.6rem;
+}
+
+.card--approach p {
   font-size: 0.92rem;
   line-height: 1.65;
 }
@@ -431,6 +469,8 @@ p {
 *============================================ */
 .timeline {
   max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 44px;
   position: relative;
 }
@@ -523,14 +563,18 @@ p {
   border-top: 1px solid var(--grey-border);
 }
 
+.footer p {
+  text-align: center;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ============================================
    Contact Section
 *============================================ */
 .contact {
   text-align: center;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 4rem;
 }
 
@@ -602,37 +646,99 @@ p {
 /* ============================================
    Responsive
 *============================================ */
+@media (max-width: 60rem) {
+	.cards-3,
+	.approach-grid {
+		grid-template-columns: 1fr !important;
+	}
+}
+
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .nav-hamburger {
-    display: flex;
-  }
-
-  .hero {
-    padding: 5rem 1.5rem 3rem;
-    min-height: 90vh;
-  }
-
-  .section {
-    padding: 4rem 1.5rem;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .approach-grid {
-    grid-template-columns: 1fr;
-  }
+	.nav-links {
+		display: none;
+	}
+	
+	.nav-hamburger {
+		display: flex;
+	}
+	
+	.hero {
+		padding: 5rem 1.5rem 3rem;
+		min-height: 90vh;
+	}
+	
+	.section {
+		padding: 4rem 1.5rem;
+	}
 }
 
 @media (min-width: 769px) {
-  .mobile-menu {
-    display: none !important;
-  }
+	.mobile-menu {
+		display: none !important;
+	}
+}
+
+.hero.team-hero {
+    min-height: 60vh;
+    justify-content: center;
+}
+
+.hero.team-hero .hero-tagline {
+    margin-top: 1.5rem;
+}
+
+.founder-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 3rem 2.5rem 2.8rem;
+    box-shadow: var(--shadow-soft);
+    transition: background var(--transition-smooth),
+                box-shadow var(--transition-smooth),
+                transform var(--transition-smooth);
+    text-align: center;
+}
+
+.founder-card:hover {
+    background: var(--glass-bg-hover);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.founder-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: -3rem auto 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--green-muted), var(--green-light));
+    box-shadow: 0 4px 20px rgba(45, 91, 61, 0.2);
+}
+
+.founder-initials {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+.founder-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.founder-bio p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* ============================================
