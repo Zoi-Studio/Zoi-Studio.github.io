@@ -11,29 +11,29 @@
 }
 
 :root {
-  --cream: #FDF9F3;
-  --cream-deep: #F5EDE2;
-  --green-dark: #2D5B3D;
-  --green-muted: #7A9E76;
-  --green-light: #A8C4A0;
-  --green-pale: #D4E4D2;
-  --grey-border: #D8DFD2;
-  --glass-bg: rgba(255, 255, 255, 0.45);
-  --glass-bg-hover: rgba(255, 255, 255, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.7);
-  --shadow-soft: 0 8px 32px rgba(45, 91, 61, 0.08);
-  --shadow-hover: 0 12px 40px rgba(45, 91, 61, 0.14);
-  --transition-smooth: 0.35s cubic-bezier(0.25, 0.46, 0.4, 0.92);
---bg-cream: #FDF9F3;
---bg-green: #DCE8DA;
---green-pale-deep: #C8D8C4;
+   --cream: #FDF9F3;
+   --cream-deep: #F5EDE2;
+   --green-dark: #2D5B3D;
+   --green-muted: #7A9E76;
+   --green-light: #A8C4A0;
+   --green-pale: #D4E4D2;
+   --grey-border: #D8DFD2;
+   --glass-bg: rgba(255, 255, 255, 0.45);
+   --glass-bg-hover: rgba(255, 255, 255, 0.6);
+   --glass-border: rgba(255, 255, 255, 0.7);
+   --shadow-soft: 0 8px 32px rgba(45, 91, 61, 0.08);
+   --shadow-hover: 0 12px 40px rgba(45, 91, 61, 0.14);
+   --transition-smooth: 0.35s cubic-bezier(0.25, 0.46, 0.4, 0.92);
+  --bg-cream: #FDF9F3;
+  --bg-green: #DCE8DA;
+  --green-pale-deep: #C8D8C4;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -96,7 +96,7 @@ p {
   align-items: center;
   background: rgba(253, 249, 243, 0.72);
   backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
   box-shadow: 0 1px 0 var(--grey-border);
   transition: background var(--transition-smooth),
               backdrop-filter var(--transition-smooth),
@@ -260,8 +260,8 @@ p {
 }
 
 @keyframes float-down {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+   0%, 100% { transform: translateX(-50%) translateY(0); }
+   50% { transform: translateX(-50%) translateY(8px); }
 }
 
 /* ============================================
@@ -275,7 +275,7 @@ p {
 
 /* Sections with wider content (cards, grids) already take full width by default. */
 .section--wide {
-  /* no-op — left for backwards compatibility */
+   /* no-op — left for backwards compatibility */
 }
 
 .section p {
@@ -355,7 +355,7 @@ p {
   padding: 1.4rem 2rem;
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
   border-radius: 16px;
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-soft);
@@ -381,7 +381,7 @@ p {
 .card {
   background: var(--glass-bg);
   backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
+   -webkit-backdrop-filter: blur(14px) saturate(160%);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 2.2rem;
@@ -617,7 +617,7 @@ p {
   z-index: 999;
   background: rgba(253, 249, 243, 0.88);
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -654,16 +654,16 @@ p {
 	.nav-links {
 		display: none;
 	}
-	
+
 	.nav-hamburger {
 		display: flex;
 	}
-	
+
 	.hero {
 		padding: 5rem 1.5rem 3rem;
 		min-height: 90vh;
 	}
-	
+
 	.section {
 		padding: 4rem 1.5rem;
 	}
@@ -684,58 +684,67 @@ p {
     margin-top: 1.5rem;
 }
 
-.founder-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(14px) saturate(160%);
-    -webkit-backdrop-filter: blur(14px) saturate(160%);
-    border: 1px solid var(--glass-border);
-    border-radius: 24px;
-    padding: 3rem 2.5rem 2.8rem;
-    box-shadow: var(--shadow-soft);
-    transition: background var(--transition-smooth),
-                box-shadow var(--transition-smooth),
-                transform var(--transition-smooth);
-    text-align: center;
+/* ============================================
+   Team Cards — reusable, copy-paste pattern
+*============================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 760px;
+  margin: 2rem auto 0;
 }
 
-.founder-card:hover {
-    background: var(--glass-bg-hover);
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-4px);
+.team-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px) saturate(160%);
+   -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 3rem 2.5rem 2.8rem;
+  box-shadow: var(--shadow-soft);
+  transition: background var(--transition-smooth),
+              box-shadow var(--transition-smooth),
+              transform var(--transition-smooth);
+  text-align: center;
 }
 
-.founder-avatar {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    margin: .5rem auto 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--green-muted), var(--green-light));
-    box-shadow: 0 4px 20px rgba(45, 91, 61, 0.2);
+.team-card:hover {
+  background: var(--glass-bg-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
 }
 
-.founder-initials {
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    letter-spacing: -0.02em;
+.team-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: .5rem auto 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--green-muted), var(--green-light));
+  box-shadow: 0 4px 20px rgba(45, 91, 61, 0.2);
 }
 
-.founder-title {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.team-initials {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
 }
 
-.founder-bio p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+/* Single card in a grid gets full width */
+.team-grid:has(> .team-card:not(:nth-child(n+2))) {
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  	.team-grid {
+  		grid-template-columns: 1fr !important;
+  		gap: 1.5rem;
+  		padding: 0 1rem;
+  	}
 }
 
 /* ============================================
