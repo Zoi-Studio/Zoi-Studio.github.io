@@ -551,15 +551,13 @@ p {
 *============================================ */
 .footer {
   display: flex;
+  background-color: var(--green-muted);
   justify-content: space-between;
   align-items: center;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding: 1.5rem 3rem;
   font-size: 0.72rem;
   opacity: 0.55;
-  border-top: 1px solid var(--grey-border);
 }
 
 .footer .rungta-brand {
@@ -576,7 +574,7 @@ p {
 
 .footer p {
   font-size: 0.72rem !important;
-  color: var(--green-dark);
+  color: var(--cream-deep);
   letter-spacing: 0.04em;
   margin: 0;
 }
