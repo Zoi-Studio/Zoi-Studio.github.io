@@ -208,7 +208,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--green-muted);
-  margin-bottom: 1.2rem;
   opacity: 0.8;
 }
 
@@ -473,7 +472,7 @@ p {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 32px;
+  padding-left: 33px;
   position: relative;
 }
 
@@ -500,24 +499,20 @@ p {
 
 .timeline-dot-wrap {
   flex-shrink: 0;
-  width: 34px;
+  width: 33px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 6px;
 }
 
+/* Timeline dots: sizing/border-radius set; background + shadow interpolated by JS */
 .timeline-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: var(--green-muted);
   box-shadow: 0 0 0 4px rgba(122, 158, 118, 0.12);
-}
-
-.timeline-dot.empty {
-  background: var(--green-pale);
-  box-shadow: 0 0 0 4px rgba(212, 228, 210, 0.35);
 }
 
 .timeline-content {
@@ -528,7 +523,7 @@ p {
   border: none;
   height: 0;
   background: linear-gradient(to right, var(--green-pale), transparent);
-  margin: 1.5rem 44px 2rem 44px;
+  margin: 1.5rem 33px 2rem 33px;
 }
 
 .timeline-phase {
