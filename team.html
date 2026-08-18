@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ZoiStudio — Meet the Team</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- ======== Navigation ======== -->
+     <nav class="nav nav--team" id="nav">
+         <a href="index.html" class="nav-logo">ZoiStudio</a>
+         <ul class="nav-links">
+             <li><a href="index.html#vision">Vision</a></li>
+             <li><a href="index.html#what-we-do">What We Do</a></li>
+             <li><a href="index.html#approach">Our Approach</a></li>
+             <li><a href="index.html#roadmap">Roadmap</a></li>
+             <li><a href="team.html" class="nav-links--active">Team</a></li>
+             <li><a href="mailto:hello@zoistudio.tech" class="nav-cta">Get In Touch</a></li>
+         </ul>
+         <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+             <span></span>
+             <span></span>
+             <span></span>
+         </button>
+     </nav>
+
+     <!-- Mobile Menu -->
+     <div class="mobile-menu" id="mobileMenu">
+         <a href="index.html#vision">Vision</a>
+         <a href="index.html#what-we-do">What We Do</a>
+         <a href="index.html#approach">Our Approach</a>
+         <a href="index.html#roadmap">Roadmap</a>
+         <a href="team.html">Team</a>
+         <a href="mailto:hello@zoistudio.tech">Get In Touch</a>
+     </div>
+
+     <!-- ======== Hero Intro ======== -->
+     <section class="hero team-hero">
+         <div class="hero-canvas-wrap">
+             <canvas id="teamCanvas"></canvas>
+         </div>
+         <div class="hero-content">
+             <div class="reveal">
+                 <p class="section-label">ZoiStudio</p>
+             </div>
+             <h1 class="reveal" style="margin-top: 1.2rem;">Meet the Team</h1>
+             <p class="team-hero-sub reveal">
+                A small, ambitious team building at the intersection of medicine
+                and spatial computing. It starts with one person &mdash; and a vision.
+             </p>
+             <p class="team-hero-sub reveal">
+                to be the premier organization for producing cutting edge technology and research.
+             </p>
+         </div>
+     </section>
+
+     <!-- ======== Team Section ======== -->
+     <section class="section bg--green">
+         <div class="reveal">
+             <p class="section-label">The Team</p>
+         </div>
+
+         <div class="team-grid stagger-children">
+             <!-- Add another person by copy-pasting the card block below -->
+             <div class="team-card reveal">
+                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                Founder
+                </p>
+                <div class="team-avatar">
+                    <span class="team-initials">KR</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Keshav Rungta</h3>
+                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                Ex Apple · MS & BS, UC San Diego
+                </p>
+                <div class="team-bio">
+                    <p>
+                    Keshav is an ML engineer who spent 4 years building and shipping the first spatial computer, the Apple Vision Pro. 
+                    His experience in 3D spatial computing and understanding of sensor fusion is at the core of ZoiStudio's vision: making healthcare more visual, more personal,
+                    and deeply grounded in real data at the beating heart of cutting edge technology and research.
+                    </p>
+                </div>
+             </div>
+         </div>
+     </section>
+
+     <hr class="divider">
+
+     <!-- ======== Advisors Section ======== -->
+     <section class="section" style="background: var(--cream);">
+         <div class="reveal">
+             <p class="section-label">Advisors</p>
+         </div>
+
+         <div class="team-grid stagger-children">
+             <!-- Add another advisor by copy-pasting the card block above -->
+             <div class="team-card reveal">
+                 <div class="team-avatar">
+                     <span class="team-initials">TW</span>
+                 </div>
+                 <h3 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Thomas Wong</h3>
+                 <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                    MD/ PhD, Texas A&M School of Medicine
+                 </p>
+             </div>
+         </div>
+     </section>
+
+     <!-- ======== Join the Team CTA ======== -->
+     <hr class="divider">
+     <section class="section contact bg--green" id="join">
+         <div class="reveal">
+             <p class="section-label">Join the Team</p>
+         </div>
+         <h2 class="reveal">We'd love to hear from you</h2>
+         <div class="section-intro">
+             <p class="reveal">
+                Whether you're a clinician, researcher, engineer, or fellow builder —
+                if you believe healthcare deserves better tools, there's a place for you here.
+             </p>
+         </div>
+         <a href="mailto:hello@zoistudio.tech" class="contact-email reveal">
+            hello@zoistudio.tech
+         </a>
+     </section>
+
+     <!-- ======== Footer ======== -->
+     <footer class="footer">
+         <p>&copy; 2026 ZoiStudio. All rights reserved.</p>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>

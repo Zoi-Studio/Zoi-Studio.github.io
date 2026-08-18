@@ -16,6 +16,7 @@
       <li><a href="#what-we-do">What We Do</a></li>
       <li><a href="#approach">Our Approach</a></li>
       <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="team.html">Team</a></li>
       <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -25,12 +26,14 @@
     </button>
   </nav>
 
-  <!-- Mobile Menu -->
+  
+
   <div class="mobile-menu" id="mobileMenu">
     <a href="#vision" class="mobile-link">Vision</a>
     <a href="#what-we-do" class="mobile-link">What We Do</a>
     <a href="#approach" class="mobile-link">Our Approach</a>
     <a href="#roadmap" class="mobile-link">Roadmap</a>
+    <a href="team.html" class="mobile-link">Team</a>
     <a href="#contact" class="mobile-link">Get In Touch</a>
   </div>
 
@@ -40,6 +43,9 @@
       <canvas id="heroCanvas"></canvas>
     </div>
     <div class="hero-content">
+      <div class="reveal">
+        <p class="section-label">ZoiStudio</p>
+      </div>
       <h1 class="reveal">Where medicine meets spatial intelligence</h1>
       <p class="hero-tagline reveal">
         We build tools that help healthcare professionals see deeper, plan smarter,
@@ -57,7 +63,7 @@
   </section>
 
   <!-- ======== Vision Section ======== -->
-  <section class="section" id="vision">
+  <section class="section bg--green" id="vision">
     <div class="reveal">
       <p class="section-label">Our Vision</p>
     </div>
@@ -89,7 +95,7 @@
   <hr class="divider">
 
   <!-- ======== What We Do ======== -->
-  <section class="section section--wide" id="what-we-do">
+  <section class="section bg--cream" id="what-we-do">
     <div class="reveal">
       <p class="section-label">What We Do</p>
     </div>
@@ -106,11 +112,10 @@
       <!-- Card 1 -->
       <div class="card reveal">
         <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
-            <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/>
-          </svg>
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+             <circle cx="12" cy="12" r="9"/>
+             <polyline points="5 12 8 12 11 7 14 17 16 12 19 12"/>
+           </svg>
         </div>
         <h3>Surgical Training &amp; Simulation</h3>
         <p>
@@ -123,10 +128,10 @@
       <!-- Card 2 -->
       <div class="card reveal">
         <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 17l6-6 4 4 8-8"/>
-            <path d="M17 5h4v4"/>
-          </svg>
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+             <path d="M8 12s-2.5 2-3 3c-1 1-2 1.5-2 1.5s1 2 3 2c1.5 0 2-0.5 3-1.5L12 14l3 1.5c1 1 1.5 1.5 3 1.5s3-2 3-2 0-0.5-2-1.5c-0.5-1-3-3-3-3z"/>
+             <line x1="9" y1="10" x2="15" y2="10" stroke-width="2"/>
+           </svg>
         </div>
         <h3>Post-Op Care &amp; Prediction</h3>
         <p>
@@ -139,11 +144,10 @@
       <!-- Card 3 -->
       <div class="card reveal">
         <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="9"/>
-            <path d="M12 7v5l3 3"/>
-            <path d="M20 8l-4-1"/>
-          </svg>
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+             <path d="M5 7s1-1 3-1 3 1 3 1v10H5z"/>
+             <path d="M11 7s1-1 3-1 3 1 3 1v10h-3"/>
+           </svg>
         </div>
         <h3>Patient Education</h3>
         <p>
@@ -159,7 +163,7 @@
   <hr class="divider">
 
   <!-- ======== Our Approach (Differentiator) ======== -->
-  <section class="section section--wide" id="approach">
+  <section class="section bg--green" id="approach">
     <div class="reveal">
       <p class="section-label">Our Approach</p>
     </div>
@@ -171,9 +175,20 @@
         that changes both the cost structure and what's possible.
       </p>
     </div>
-    <div class="approach-grid stagger-children">
+    <div class="cards-grid cards-3 stagger-children">
 
-      <div class="approach-item reveal">
+      <div class="card reveal">
+         <div class="approach-icon">
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+             <circle cx="12" cy="12" r="5"/>
+             <circle cx="12" cy="12" r="7"/>
+             <line x1="12" y1="2" x2="12" y2="5"/>
+             <line x1="12" y1="19" x2="12" y2="22"/>
+             <line x1="2" y1="12" x2="5" y2="12"/>
+             <line x1="19" y1="12" x2="22" y2="12"/>
+           </svg>
+         </div>
         <h3>Built from real data</h3>
         <p>
           Our simulations are generated from actual surgical video and imaging &mdash;
@@ -182,7 +197,18 @@
         </p>
       </div>
 
-      <div class="approach-item reveal">
+      <div class="card reveal">
+         <div class="approach-icon">
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+             <circle cx="6" cy="7" r="1.5"/>
+             <circle cx="18" cy="7" r="1.5"/>
+             <circle cx="12" cy="17" r="1.5"/>
+             <line x1="7.5" y1="8" x2="10.5" y2="15"/>
+             <line x1="16.5" y1="8" x2="13.5" y2="15"/>
+             <line x1="7.5" y1="7" x2="16.5" y2="7"/>
+           </svg>
+         </div>
         <h3>Scale expert knowledge</h3>
         <p>
           The skill and judgment of top surgeons shouldn't be limited to one
@@ -191,7 +217,15 @@
         </p>
       </div>
 
-      <div class="approach-item reveal">
+      <div class="card reveal">
+         <div class="approach-icon">
+           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+             <path d="M12 2l7 3v5c0 4-3.5 7.5-7 9-3.5-1.5-7-5-7-9V5z"/>
+             <path d="M12 2l7 3v5c0 4-3.5 7.5-7 9" fill="#D4E4D2"/>
+             <polyline points="9 12 11 14 15 10"/>
+           </svg>
+         </div>
         <h3>Human-in-the-loop quality</h3>
         <p>
           AI handles the repetitive, mundane work &mdash; image processing, pattern
@@ -206,7 +240,7 @@
   <hr class="divider">
 
   <!-- ======== Roadmap ======== -->
-  <section class="section" id="roadmap">
+  <section class="section bg--cream" id="roadmap">
     <div class="reveal">
       <p class="section-label">Our Roadmap</p>
     </div>
@@ -247,7 +281,7 @@
         <div class="timeline-content">
           <p class="timeline-phase">Vision</p>
           <h3>Broader Clinical Impact</h3>
-          <p>Mental wellness tools, deeper clinical integrations, and expanded access to expert-level medical care for underserved communities.</p>
+          <p>Making healthcare more visual, more personal, and deeply grounded in real data at the beating heart of cutting edge technology and research.</p>
         </div>
       </div>
 
@@ -257,7 +291,7 @@
   <hr class="divider">
 
   <!-- ======== Contact Section ======== -->
-  <section class="section contact" id="contact">
+  <section class="section bg--green contact" id="contact">
     <div class="reveal">
       <p class="section-label">Get In Touch</p>
     </div>
