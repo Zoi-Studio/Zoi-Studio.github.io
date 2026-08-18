@@ -473,7 +473,7 @@ p {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 44px;
+  padding-left: 32px;
   position: relative;
 }
 
@@ -488,10 +488,10 @@ p {
 }
 
 .timeline-item {
+  max-width: 520px;
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 0;
 }
 
 .timeline-item:last-child {
