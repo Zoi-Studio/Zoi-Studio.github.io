@@ -550,21 +550,68 @@ p {
    Footer
 *============================================ */
 .footer {
-  text-align: center;
-  max-width: 36em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
-  font-size: 0.82rem;
+  display: flex;
+  background-color: var(--green-muted);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  font-size: 0.72rem;
   opacity: 0.55;
-  border-top: 1px solid var(--grey-border);
+}
+
+.footer a.rungta-brand {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--cream-deep);
+}
+
+.footer a.rungta-brand:hover {
+  opacity: 0.85;
+}
+
+.footer img {
+  height: 45px;
+  width: auto;
 }
 
 .footer p {
-  text-align: center;
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 0.72rem !important;
+  color: var(--cream-deep);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.footer .venture-text {
+  font-size: 0.72rem !important;
+  color: var(--green-dark);
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.footer p:last-child {
+  font-size: 0.72rem !important;
+  text-align: right;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Mobile footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+    /* base rule handles flex-direction for .rungta-brand */
+  .footer p:last-child {
+    text-align: center;
+  }
 }
 
 /* ============================================
