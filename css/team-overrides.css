@@ -5,11 +5,11 @@
 *============================================ */
 
 :root {
-    --dark: #A06B45;
-    --muted: #C88A75;
-    --light: #E6B39A;
-    --pale: #F2D8CE;
-    --grey-border: #F0DED6;
-    --bg-muted: #F5E4D8;
-    --pale-deep: #EDE0D8;
+     --dark: #C89A42;
+     --muted: #D4A870;
+     --light: #EDCAAA;
+     --pale: #FAEBD4;
+     --grey-border: #F5E8D4;
+     --bg-muted: #FAF0E0;
+     --pale-deep: #F5EBD0;
 }
