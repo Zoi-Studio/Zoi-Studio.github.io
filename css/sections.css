@@ -1,0 +1,71 @@
+/* ============================================
+   Sections (shared)
+*============================================ */
+.section {
+  padding: 6rem 2rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Sections with wider content (cards, grids) already take full width by default. */
+.section--wide {
+    /* no-op — left for backwards compatibility */
+}
+
+.section p {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 1.2rem;
+}
+
+.section p {
+  margin-bottom: 0;
+}
+
+.section-intro {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem;
+}
+
+.section-label {
+  max-width: 36em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--green-muted);
+  opacity: 0.9;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);
+}
+
+/* --- Background Utilities (alternating section colors) --- */
+.bg--cream {
+    background: var(--bg-cream);
+}
+
+.bg--green {
+    background: var(--bg-green);
+}
+
+.bg--green .timeline-phase {
+    color: #FDF9F3;
+}
+
+/* --- Divider (hr between sections) --- */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--grey-border);
+  margin: 0 auto;
+  border: none;
+}

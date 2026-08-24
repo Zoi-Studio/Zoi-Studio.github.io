@@ -1,0 +1,117 @@
+/* ============================================
+   Navigation
+*============================================ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(253, 249, 243, 0.72);
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 1px 0 var(--grey-border);
+  transition: background var(--transition-smooth),
+              backdrop-filter var(--transition-smooth),
+              box-shadow var(--transition-smooth);
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.88rem;
+  color: var(--green-dark);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity var(--transition-smooth);
+  font-weight: 450;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-cta {
+  background: var(--green-muted) !important;
+  color: white !important;
+  padding: 0.55rem 1.3rem;
+  border-radius: 100px;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  transition: transform var(--transition-smooth),
+              box-shadow var(--transition-smooth) !important;
+}
+
+.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(122, 158, 118, 0.3);
+}
+
+/* Mobile hamburger */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.8px;
+  background: var(--green-dark);
+  border-radius: 2px;
+  transition: transform var(--transition-smooth),
+              opacity var(--transition-smooth);
+}
+
+/* Mobile Nav Overlay */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(253, 249, 243, 0.88);
+  backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-size: 1.5rem;
+  color: var(--green-dark);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity var(--transition-smooth);
+}
+
+.mobile-menu a:hover {
+  opacity: 1;
+}
