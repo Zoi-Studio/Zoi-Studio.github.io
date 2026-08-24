@@ -1,0 +1,15 @@
+/* ============================================
+   Team Page — Orange Palette Overrides
+   Replaces green variables with pastel orange.
+   Loaded AFTER shared CSS to cascade overrides.
+*============================================ */
+
+:root {
+    --green-dark: #A06B45;
+    --green-muted: #C88A75;
+    --green-light: #E6B39A;
+    --green-pale: #F2D8CE;
+    --grey-border: #F0DED6;
+    --bg-green: #F5E4D8;
+    --green-pale-deep: #EDE0D8;
+}
