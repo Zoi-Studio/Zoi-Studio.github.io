@@ -23,7 +23,7 @@
 .nav-logo {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--green-dark);
+  color: var(--dark);
   text-decoration: none;
   letter-spacing: -0.03em;
 }
@@ -37,7 +37,7 @@
 
 .nav-links a {
   font-size: 0.88rem;
-  color: var(--green-dark);
+  color: var(--dark);
   text-decoration: none;
   opacity: 0.75;
   transition: opacity var(--transition-smooth);
@@ -49,7 +49,7 @@
 }
 
 .nav-cta {
-  background: var(--green-muted) !important;
+  background: var(--muted) !important;
   color: white !important;
   padding: 0.55rem 1.3rem;
   border-radius: 100px;
@@ -79,7 +79,7 @@
   display: block;
   width: 22px;
   height: 1.8px;
-  background: var(--green-dark);
+  background: var(--dark);
   border-radius: 2px;
   transition: transform var(--transition-smooth),
               opacity var(--transition-smooth);
@@ -106,7 +106,7 @@
 
 .mobile-menu a {
   font-size: 1.5rem;
-  color: var(--green-dark);
+  color: var(--dark);
   text-decoration: none;
   opacity: 0.85;
   transition: opacity var(--transition-smooth);

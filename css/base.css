@@ -13,10 +13,10 @@
 :root {
     --cream: #FDF9F3;
     --cream-deep: #F5EDE2;
-    --green-dark: #2D5B3D;
-    --green-muted: #7A9E76;
-    --green-light: #A8C4A0;
-    --green-pale: #D4E4D2;
+    --dark: #2D5B3D;
+    --muted: #7A9E76;
+    --light: #A8C4A0;
+    --pale: #D4E4D2;
     --grey-border: #D8DFD2;
     --glass-bg: rgba(255, 255, 255, 0.45);
     --glass-bg-hover: rgba(255, 255, 255, 0.6);
@@ -25,8 +25,8 @@
     --shadow-hover: 0 12px 40px rgba(45, 91, 61, 0.14);
     --transition-smooth: 0.35s cubic-bezier(0.25, 0.46, 0.4, 0.92);
    --bg-cream: #FDF9F3;
-   --bg-green: #DCE8DA;
-   --green-pale-deep: #C8D8C4;
+   --bg-muted: #DCE8DA;
+   --pale-deep: #C8D8C4;
 }
 
 html {
@@ -40,7 +40,7 @@ body {
   margin: 0;
   font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   background: var(--cream);
-  color: var(--green-dark);
+  color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -58,7 +58,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 
 p {
   font-size: clamp(0.95rem, 1.2vw, 1.1rem);
-  color: var(--green-dark);
+  color: var(--dark);
   opacity: 0.88;
 }
 
