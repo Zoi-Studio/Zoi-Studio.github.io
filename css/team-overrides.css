@@ -1,0 +1,15 @@
+/* ============================================
+   Team Page — Warm Palette Overrides
+   Overrides the default green palette with warm/earthy tones.
+   Loaded AFTER shared CSS to cascade overrides.
+*============================================ */
+
+:root {
+     --dark: #C89A42;
+     --muted: #D4A870;
+     --light: #EDCAAA;
+     --pale: #FAEBD4;
+     --grey-border: #F5E8D4;
+     --bg-muted: #FAF0E0;
+     --pale-deep: #F5EBD0;
+}

@@ -4,7 +4,12 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>ZoiStudio — Meet the Team</title>
-     <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="css/base.css">
+       <link rel="stylesheet" href="css/nav.css">
+       <link rel="stylesheet" href="css/hero.css">
+       <link rel="stylesheet" href="css/sections.css">
+       <link rel="stylesheet" href="css/team-overrides.css">
+          <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
 
@@ -65,14 +70,14 @@
          <div class="team-grid stagger-children">
              <!-- Add another person by copy-pasting the card block below -->
              <div class="team-card reveal">
-                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--muted); font-weight: 500; text-shadow: 0 1px 2px rgba(200, 154, 66, 0.35);">
                 Founder
                 </p>
                 <div class="team-avatar">
                     <span class="team-initials">KR</span>
                 </div>
                 <h3 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Keshav Rungta</h3>
-                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--muted); font-weight: 500; text-shadow: 0 1px 2px rgba(200, 154, 66, 0.35);">
                 Ex Apple · MS & BS, UC San Diego
                 </p>
                 <div class="team-bio">
@@ -101,7 +106,7 @@
                     <span class="team-initials">TW</span>
                 </div>
                 <h3 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Thomas Wong</h3>
-                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--green-muted); font-weight: 500; text-shadow: 0 1px 2px rgba(45, 91, 61, 0.4);">
+                <p class="team-credits" style="text-align: center; margin-bottom: 1.4rem; color: var(--muted); font-weight: 500; text-shadow: 0 1px 2px rgba(200, 154, 66, 0.35);">
                     BS, UC San Diego · MD / PhD Candidate Texas A&M University
                 </p>
                 <div class="team-bio">
@@ -117,7 +122,7 @@
 
      <!-- ======== Join the Team CTA ======== -->
      <hr class="divider">
-     <section class="section contact" id="join">
+     <section class="section contact bg--green" id="join">
          <div class="reveal">
              <p class="section-label">Join the Team</p>
          </div>
@@ -136,12 +141,16 @@
     <!-- ======== Footer ======== -->
     <footer class="footer">
             <a href="https://www.rungta.com" class="rungta-brand">
-                <img src="Assets/Images/RUNGTA GROUP LOGO_cream_dark_green.webp" alt="Rungta Group Logo">
+                <img src="Assets/Images/RUNGTA GROUP LOGO_cream_dark_gold.webp" alt="Rungta Group Logo">
                 <p>A Rungta Group Venture</p>
             </a>
         <p>&copy; 2026 ZoiStudio. All rights reserved.</p>
     </footer>
 
-     <script src="script.js"></script>
+       <script src="js/navigation.js"></script>
+       <script src="js/animations.js"></script>
+       <script>var canvasPalette = { muted: "#D4A870", light: "#EDCAAA", pale: "#FAEBD4", dark: "#C89A42" };</script>
+         <script src="js/canvas.js"></script>
+       <script src="js/timeline.js"></script>
 </body>
 </html>
